@@ -6,6 +6,6 @@ where
 select mi
 
 // using regex to find all ntoh* invocations/calls in the codebase
-// from Macro m
-// where m.getName().regexpMatch("ntoh(s|l|ll)")
-// select m
+// from MacroInvocation mi
+// where mi.getMacro().getName().regexpMatch("ntoh(s|l|ll)")
+// select mi
